@@ -24,3 +24,4 @@ User stories
 * user will be able to delete spices from their list
 
 
+# spice-mix
