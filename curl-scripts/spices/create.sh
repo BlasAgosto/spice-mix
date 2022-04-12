@@ -1,11 +1,11 @@
 #!/bin/bash
 
-TEXT="huehue"
-TITLE="supreme"
-TOKEN="fabdd1d313df761ab96814dbff5a85e1"
+NAME="huehueuhue sauce"
+IMPACT="hue doesn't want more huehue in their life?"
+TOKEN="2f384e15708ebabfdb05fb04e86ef831"
 
 API="http://localhost:4741"
-URL_PATH="/examples"
+URL_PATH="/spice-mix"
 
 curl "${API}${URL_PATH}" \
   --include \
@@ -13,9 +13,9 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-    "example": {
-      "text": "'"${TEXT}"'",
-      "title": "'"${TITLE}"'"
+    "spice": {
+      "name": "'"${NAME}"'",
+      "impact": "'"${IMPACT}"'"
     }
   }'
 

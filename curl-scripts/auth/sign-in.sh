@@ -1,5 +1,8 @@
 #!/bin/bash
 
+EMAIL="blassyboi@goodones.com"
+PASSWORD="1"
+
 API="http://localhost:4741"
 URL_PATH="/sign-in"
 
