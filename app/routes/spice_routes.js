@@ -16,6 +16,7 @@ const router = express.Router()
 
 // CREATE
 router.post('/spice-mix', requireToken, (req, res, next) => {
+  console.log(req.body)
   req.body.spice.owner = req.user.id
 
   Spice.create(req.body.spice)
