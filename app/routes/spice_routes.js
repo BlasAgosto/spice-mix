@@ -29,6 +29,9 @@ router.post('/spice-mix', requireToken, (req, res, next) => {
 // INDEX
 router.get('/spice-mix', requireToken, (req, res, next) => {
   Spice.find()
+  .then(spice => {
+    return spice.filter(spice => { return spice.owner == req.user.id })
+  })
     .then((spice) => {
       return spice.map((spice) => spice.toObject())
     })
